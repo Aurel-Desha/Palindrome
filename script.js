@@ -5,6 +5,15 @@ checkBtn.addEventListener("click", ()=>{
   if(textInput.value === ""){
     alert("Please input a value");
   } else {
-    alert(textInput);
+    alert(textInput.value);
+    verifyPalindrome(textInput);
   }
 })
+
+const verifyPalindrome = (text)=>{
+  let arrayOrigin = [];
+  let arrayPalindrome = [];
+  arrayOrigin = text.value.split(" ").join("").split("");
+  console.log(arrayOrigin);
+  console.log(arrayOrigin.reverse());
+}
