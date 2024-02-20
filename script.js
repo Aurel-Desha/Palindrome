@@ -17,7 +17,7 @@ const verifyPalindrome = (text)=>{
   arrayOrigin = text.value.split(" ").join("").split("");
   console.log(`${arrayOrigin.join("")} === ${arrayOrigin.reverse().join("")}`);
   if(arrayOrigin.join("") === arrayOrigin.reverse().join("")){
-    result.textContent = "c'est un palindrome";
+    result.innerHTML = `<span style ="font-weight:700">${text.value}</span> est un palindrome`;
     console.log("cest un palindrome");
   }
 }
