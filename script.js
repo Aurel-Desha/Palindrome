@@ -25,6 +25,6 @@ const verifyPalindrome = (text)=>{
 }
 
 function cleanInputString(str) {
-  const regex = /[\,.|_+-\s/]/g;
+  const regex = /[\():,.|_+-\s/]/g;
   return str.replace(regex, '');
 }
