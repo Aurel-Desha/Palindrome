@@ -17,8 +17,10 @@ const verifyPalindrome = (text)=>{
   arrayOrigin = cleanInputString(text.value).split(" ").join("").split("");
   console.log(`${arrayOrigin.join("")} === ${arrayOrigin.reverse().join("")}`);
   if(arrayOrigin.join("").toLowerCase() === arrayOrigin.reverse().join("").toLowerCase()){
-    result.innerHTML = `<span style ="font-weight:900">${text.value}</span> est un palindrome`;
+    result.innerHTML = `<span style ="font-weight:900">${text.value}</span> is a palindrome.`;
     console.log("cest un palindrome");
+  } else {
+    result.innerHTML = `<span style ="font-weight:900">${text.value}</span> is not a palindrome`
   }
 }
 
